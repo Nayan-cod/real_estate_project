@@ -1,3 +1,5 @@
+Link: https://realestateproject-zddhpspex9vvwcrigkhmta.streamlit.app/
+
 # Real Estate Valuation, Risk Profiling & Investment Recommendation Portal
 
 An end-to-end, reproducible machine learning pipeline and interactive business intelligence dashboard designed to predict fair market property values, assess neighborhood safety risks, project expected CAGR returns, and generate BUY/HOLD/SELL recommendations.

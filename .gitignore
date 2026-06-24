@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large Data Files (Ignore uncompressed files to prevent GitHub push failures)
+# The 192MB uncompressed dataset must be ignored:
+data/processed/final_dataset_with_recommendations.csv
+# The 43MB compressed version (final_dataset_with_recommendations.csv.gz) is tracked and pushed!
+
+# Ignore intermediate/large raw data files if they are not required by the web app:
+data/merged_city_crime_data.csv
+data/raw/
+data/interim/
+raw_data/
+
+# Model files (keep them as they are small and needed for predictions)
+!outputs/models/*.pkl

@@ -1,4 +1,4 @@
-Link: https://realestateproject-zddhpspex9vvwcrigkhmta.streamlit.app/
+Link: https://realestateproject-kwapp9yox8rsfzkh3jnp8hf.streamlit.app/
 
 # Real Estate Valuation, Risk Profiling & Investment Recommendation Portal
 

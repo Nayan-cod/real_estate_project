@@ -72,19 +72,19 @@ try:
                 'Risk Score (0-100)', 'Expected 3-Yr ROI (%)', 'Investment Recommendation'
             ],
             'Property A': [
-                int(prop_a['ID']), prop_a['City'], prop_a['Locality'], prop_a['Property_Type'], int(prop_a['BHK']), f"{prop_a['Size_in_SqFt']:,} SqFt",
-                f"₹{prop_a['Price_in_Lakhs']:.2f} L", f"₹{prop_a['Predicted_Price']:.2f} L", prop_a['Furnished_Status'],
-                f"{prop_a['risk_score']:.1f} ({prop_a['risk_category']})", f"{prop_a['roi_3_years']:.1f}%", prop_a['recommendation']
+                str(int(prop_a['ID'])), str(prop_a['City']), str(prop_a['Locality']), str(prop_a['Property_Type']), str(int(prop_a['BHK'])), f"{prop_a['Size_in_SqFt']:,} SqFt",
+                f"₹{prop_a['Price_in_Lakhs']:.2f} L", f"₹{prop_a['Predicted_Price']:.2f} L", str(prop_a['Furnished_Status']),
+                f"{prop_a['risk_score']:.1f} ({prop_a['risk_category']})", f"{prop_a['roi_3_years']:.1f}%", str(prop_a['recommendation'])
             ],
             'Property B': [
-                int(prop_b['ID']), prop_b['City'], prop_b['Locality'], prop_b['Property_Type'], int(prop_b['BHK']), f"{prop_b['Size_in_SqFt']:,} SqFt",
-                f"₹{prop_b['Price_in_Lakhs']:.2f} L", f"₹{prop_b['Predicted_Price']:.2f} L", prop_b['Furnished_Status'],
-                f"{prop_b['risk_score']:.1f} ({prop_b['risk_category']})", f"{prop_b['roi_3_years']:.1f}%", prop_b['recommendation']
+                str(int(prop_b['ID'])), str(prop_b['City']), str(prop_b['Locality']), str(prop_b['Property_Type']), str(int(prop_b['BHK'])), f"{prop_b['Size_in_SqFt']:,} SqFt",
+                f"₹{prop_b['Price_in_Lakhs']:.2f} L", f"₹{prop_b['Predicted_Price']:.2f} L", str(prop_b['Furnished_Status']),
+                f"{prop_b['risk_score']:.1f} ({prop_b['risk_category']})", f"{prop_b['roi_3_years']:.1f}%", str(prop_b['recommendation'])
             ]
         }
         
         comparison_df = pd.DataFrame(comparison_data)
-        st.dataframe(comparison_df, hide_index=True, use_container_width=True)
+        st.dataframe(comparison_df, hide_index=True, width="stretch")
         
         st.markdown("---")
         

@@ -65,7 +65,7 @@ try:
             table_df['Attractiveness (0-100)'] = table_df['Attractiveness (0-100)'].apply(lambda x: f"{x:.1f}")
             table_df['Avg Price (Lakhs)'] = table_df['Avg Price (Lakhs)'].apply(lambda x: f"₹{x:.2f}L")
             table_df['Avg 3-Yr ROI'] = table_df['Avg 3-Yr ROI'].apply(lambda x: f"{x:.1f}%")
-            st.dataframe(table_df[['Locality Name', 'City', 'Attractiveness (0-100)', 'Avg Price (Lakhs)', 'Avg 3-Yr ROI']], hide_index=True, use_container_width=True)
+            st.dataframe(table_df[['Locality Name', 'City', 'Attractiveness (0-100)', 'Avg Price (Lakhs)', 'Avg 3-Yr ROI']], hide_index=True, width="stretch")
             
         with col_t2:
             # Display Plotly Bar
@@ -103,7 +103,7 @@ try:
             table_df['Projected 3-Yr ROI (%)'] = table_df['Projected 3-Yr ROI (%)'].apply(lambda x: f"{x:.1f}%")
             table_df['Avg Price (Lakhs)'] = table_df['Avg Price (Lakhs)'].apply(lambda x: f"₹{x:.2f}L")
             table_df['Attractiveness Score'] = table_df['Attractiveness Score'].apply(lambda x: f"{x:.1f}")
-            st.dataframe(table_df[['Locality Name', 'City', 'Projected 3-Yr ROI (%)', 'Avg Price (Lakhs)', 'Attractiveness Score']], hide_index=True, use_container_width=True)
+            st.dataframe(table_df[['Locality Name', 'City', 'Projected 3-Yr ROI (%)', 'Avg Price (Lakhs)', 'Attractiveness Score']], hide_index=True, width="stretch")
             
         with col_g2:
             # Display Plotly Bar
@@ -141,7 +141,7 @@ try:
             table_df['Risk Score (Lower is Safer)'] = table_df['Risk Score (Lower is Safer)'].apply(lambda x: f"{x:.1f}")
             table_df['Avg Price (Lakhs)'] = table_df['Avg Price (Lakhs)'].apply(lambda x: f"₹{x:.2f}L")
             table_df['Avg 3-Yr ROI'] = table_df['Avg 3-Yr ROI'].apply(lambda x: f"{x:.1f}%")
-            st.dataframe(table_df[['Locality Name', 'City', 'Risk Score (Lower is Safer)', 'Avg Price (Lakhs)', 'Avg 3-Yr ROI']], hide_index=True, use_container_width=True)
+            st.dataframe(table_df[['Locality Name', 'City', 'Risk Score (Lower is Safer)', 'Avg Price (Lakhs)', 'Avg 3-Yr ROI']], hide_index=True, width="stretch")
             
         with col_s2:
             # Display Plotly Bar

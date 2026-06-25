@@ -99,7 +99,7 @@ try:
             # Formatted table
             table_df = forecast_data.copy()
             table_df['Projected Price (₹ Lakhs)'] = table_df['Projected Price (₹ Lakhs)'].apply(lambda x: f"₹{x:.2f} Lakhs")
-            st.dataframe(table_df, hide_index=True, use_container_width=True)
+            st.dataframe(table_df, hide_index=True, width="stretch")
             
             # Summary details
             net_gain = prices[-1] - current_price
